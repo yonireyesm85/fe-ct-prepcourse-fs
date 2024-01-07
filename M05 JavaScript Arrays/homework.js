@@ -16,6 +16,7 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
+   return array.length;
 }
 
 function incrementarPorUno(array) {
