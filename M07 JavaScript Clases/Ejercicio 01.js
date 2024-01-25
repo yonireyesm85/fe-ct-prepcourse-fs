@@ -10,7 +10,25 @@ function crearUsuario() {
    // El valor {{nombre}} debe ser el nombre definido para la instancia de la clase.
    // Retornar la clase.
    // Tu código:
+   function Usuario(usuario, nombre, email, password){
+      this.usuario = usuario;
+      this.nombre = nombre;
+      this.email = email;
+      this.password = password;
+   }
+
+   Usuario.prototype.saludar = function(){
+      return 'Hola, mi nombre es' + this.nombre;
+   }
+
+   // var usuario = new Usuario('Yoni', 'Yoni', 'yoni@gmail.com', 'pass123')
+
+   // console.log(usuario);
+
+   return Usuario;
 }
+
+// crearUsuario()
 
 function agregarMetodoPrototype(Usuario) {
    // Agrega un método al prototipo de "Usuario".
